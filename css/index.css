@@ -17,6 +17,12 @@
   margin-left: 1%;
   width: 80%;
 }
+@media (max-width: 500px) {
+  .bottombutton {
+    width: 95%;
+    background-color: #6db6af;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -196,10 +202,20 @@ img {
   margin: 4% 7% 0% 4%;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
 .navigation .fun-bus-logo {
   font-size: 4rem;
   font-family: 'Indie Flower', cursive;
   margin-left: 10%;
+}
+@media (max-width: 500px) {
+  .navigation .fun-bus-logo {
+    text-align: center;
+  }
 }
 .navigation .navbar {
   display: flex;
@@ -207,11 +223,24 @@ img {
   justify-content: space-between;
   margin-right: 10%;
 }
+@media (max-width: 500px) {
+  .navigation .navbar {
+    margin: 0;
+    max-width: 75%;
+    margin-left: 13%;
+    margin-top: 3%;
+  }
+}
 .navigation .navbar nav {
   white-space: nowrap;
   padding: 5%;
   padding-left: 10%;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navigation .navbar nav {
+    padding: 0;
+  }
 }
 .footer {
   width: 100%;
@@ -241,13 +270,30 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 75%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 75%;
+    align-items: center;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -255,6 +301,12 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -277,9 +329,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
 }
 .home .content-pick .destination div {
   display: flex;
@@ -292,4 +355,10 @@ img {
   padding: 4%;
   margin-left: 1%;
   width: 80%;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination div {
+    width: 95%;
+    background-color: #6db6af;
+  }
 }

@@ -8,10 +8,19 @@
     margin: 4% 7% 0% 4%;
     padding: 2%;
 
+    @media @mobile {
+        flex-direction: column;
+      }
+
     .fun-bus-logo {
         font-size: 4rem;
         font-family: 'Indie Flower', cursive;
         margin-left: 10%;
+        //border: solid;
+
+        @media @mobile {
+            text-align: center;
+        }
     }
 
     .navbar {
@@ -20,11 +29,26 @@
         //border: solid;
         margin-right: 10%;
 
+        @media @mobile {
+            margin: 0;
+            max-width: 75%;
+            margin-left: 13%;
+            margin-top: 3%;
+        }
+
+        
+
         nav {
             white-space: nowrap;
             padding: 5%;
             padding-left: 10%;
             font-size: 1.6rem;
+            //border: solid;
+
+            @media @mobile {
+                padding: 0;
+                
+            }
         }
     }
 }
